@@ -39,7 +39,77 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   </head>
   <body>
-    
+    <style>
+  /* Section Headings */
+  .heading h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #3f396d;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .heading small {
+    color: #0d6efd;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  /* General Text */
+  .text-muted {
+    color: #6c757d !important;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  /* Contact Section Icons & Text */
+  .contact-details .row {
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+
+  .contact-details i {
+    font-size: 1.2rem;
+    color: #0d6efd;
+  }
+
+  .contact-details p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: #3f396d;
+  }
+
+  /* Portfolio Titles */
+  .portfolio .card-title,
+  .blog .card-title,
+  .testimonial h4,
+  .skill-with-progress .text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #3f396d;
+  }
+
+  /* Skill progress labels */
+
+
+  /* Skill percentages */
+ 
+
+  /* Testimonial section quote icons */
+ 
+  /* Blog links */
+  .blog .card-title a {
+    color: #3f396d;
+    text-decoration: none;
+  }
+
+  .blog .card-title a:hover {
+    color: #0d6efd;
+  }
+</style>
+
     <!-- navbar starts -->
     <nav
       id="navbar-top"
@@ -47,16 +117,19 @@
     >
       <div class="container-fluid px-5">
         <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
-          >My Portfolio</a
-        >
+          >Ctrl + Me</a>
         <button
-          class="nav-menu d-md-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <i class="bi bi-menu-button-fill"></i>
-        </button>
+  class="nav-menu d-lg-none d-flex align-items-center gap-2"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#navbarNav"
+  aria-label="Toggle navigation"
+>
+  <i class="bi bi-list fs-3"></i>
+  <span style="font-size: 0.9rem; color: #3f396d;">Menu</span>
+</button>
+
+
         <div
           class="collapse navbar-collapse justify-content-center"
           id="navbarNav"
@@ -82,9 +155,10 @@
             </li>
           </ul>
         </div>
-     <a href="#contact" class="btn btn-primary rounded-pill px-4 py-2 shadow-sm d-inline-flex align-items-center gap-2">
+    <a href="#contact" class="btn btn-primary rounded-pill px-4 py-2 shadow-sm d-none d-lg-inline-flex align-items-center gap-2">
   <i class="bi bi-envelope-fill"></i> Contact Me
 </a>
+
       </div>
     </nav>
     <!-- navbar ends here -->
@@ -240,8 +314,7 @@
             <small>My Skills</small>
             <h3> Beautiful & Unique Digital Experiences</h3>
             <p class="text-muted">
-             I'm a creative and technically skilled professional with expertise in graphic design, video editing, and digital content creation. Proficient in tools like AdobPhotoshope , CorelDRAW, Canva, Illustrator, CapCut, and Microsoft Office, I collaborate effectively with teams to deliver visually engaging and results-driven work. Known for strong time management, critical thinking, and the ability to meet deadlines independently or in group settings.
-            </p>
+             Creative and tech-savvy professional skilled in graphic design, video editing, and content creation. Proficient in Adobe Photoshop, Canva, CorelDRAW, CapCut, and Microsoft Office. Known for delivering quality work, meeting deadlines, and thriving in both team and solo projects. </p>
             <p class="text-muted">
               Skilled in graphic design, video editing, and Microsoft Office tools, with strengths in teamwork, time management, creative problem-solving, and effective communication.
             </p>
@@ -265,15 +338,7 @@
         <h3>Check My Portfolio</h3>
       </div>
 
-      <div id="myBtnContainer" class="text-center mt-4">
-        <!-- here we will create custom attribute using data- for filtering -->
-        <button class="filter-item" data-filter="all">All</button>
-        <button class="filter-item" data-filter="game">Game</button>
-        <button class="filter-item" data-filter="webapp">Web App</button>
-        <button class="filter-item" data-filter="website">Website</button>
-        <button class="filter-item" data-filter="brand">Brand</button>
-      </div>
-      <div class="portfolio-body">
+            <div class="portfolio-body">
         <div class="row justify-content-evenly px-4">
           <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
             <div class="card">
@@ -505,10 +570,11 @@
 </section>
 
 <!-- =========================== Contact Form Section =========================== -->
-<section class="contact py-5" id="contact">
+<section class="contact py-5 contact-section-margin" id="contact">
   <div class="heading text-center">
     <small>Get in Touch</small>
-    <h3>Any Questions? Feel Free to Contact</h3>
+    <h3>Any Questions? Feel Free to Contact</h3
+      >
   </div>
   <div class="row justify-content-evenly mt-5">
     <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
@@ -585,13 +651,13 @@
 
 
       <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
-    <button
+    <!-- <button
       type="button"
       class="btn btn-floating btn-lg rounded-pill"
       id="btn-back-to-top"
     >
       <i class="bi bi-arrow-up"></i>
-    </button>
+    </button> -->
 
     <!-- footer section starts  -->
     <footer class="text-center text-muted py-4">

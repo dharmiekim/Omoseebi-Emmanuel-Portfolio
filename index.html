@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Omoseebi Emmanuel</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >My Portfolio</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+     <a href="#contact" class="btn btn-primary rounded-pill px-4 py-2 shadow-sm d-inline-flex align-items-center gap-2">
+  <i class="bi bi-envelope-fill"></i> Contact Me
+</a>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #0d6efd">
+            Hello! I Am <br /><span class="c-orange">Omoseebi Emmanuel</span>
+          </h2>
+          <p class="text-muted">
+            I'm a UI/UX Designer, Web Developer, Graphics Designer, and Quality Assurance Engineer with experience in creating responsive, user-focused 
+            digital products. <br> <br> My background combines creative design, front-end development, and software testing—ensuring that the solutions I build are both visually compelling and functionally reliable.
+          </p>
+        <br>  <a href="https://wa.link/7xa6x1" 
+   class="btn btn-primary rounded-pill px-5 py-3 shadow-sm d-inline-flex align-items-center gap-2"
+   target="_blank" 
+   rel="noopener noreferrer">
+  <i class="bi bi-whatsapp"></i> Hire Me
+</a>
+    
+
+          <a href="" class="link ms-4 d-none">See My Work</a>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images/banner.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="service">
+      <div class="heading text-center">
+        <small>My Expertise</small>
+        <h3>
+          Provide Wide Range of <br />
+          Digital Services
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon1.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Web Design/Development</h4>
+              <p class="text-muted">
+                Creating visually engaging, responsive, and user-friendly 
+                websites with a focus on performance, accessibility, and seamless user experience.
+              </p>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon2.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Graphics Design / Video Editing</h4>
+              <p class="text-muted">
+               Producing compelling visual content and dynamic videos, including branding, social media assets, 
+               and promotional videos using Adobe Photoshop, CorelDRAW, Canva, Illustrator, and CapCut.
+              </p>
+            
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon3.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Software Testing / Debugging</h4>
+              <p class="text-muted mb-4">
+  Ensuring software quality through detailed testing, identifying bugs, 
+  and verifying functionality to deliver reliable and error-free digital products.
+</p>
+
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise section ends here -->
+
+    <!-- skill section starts -->
+    <section class="skill mt-5 py-5" id="about">
+      <div class="row justify-content-evenly">
+        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-10 col-md-6">
+              <div class="progress-card text-center d-flex flex-column align-items-center">
+                <div class="circular-progress html-css">
+                  <span class="progress-value html-progress">0%</span>
+                </div>
+                <br />
+                 <span class="text">HTML & CSS</span>
+</div>
+</div>
+<div class="col-10 col-md-6 mt-4 mt-md-0">
+  <div class="progress-card text-center d-flex flex-column align-items-center">
+    <div class="circular-progress javascript">
+      <span class="progress-value javascript-progress">0%</span>
+    </div>
+                <br />
+                <span class="text">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-evenly mt-4">
+            <div class="col-10 col-md-6">
+              <div class="progress-card text-center d-flex flex-column align-items-center">
+                <div class="circular-progress php">
+                  <span class="progress-value php-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">Graphics Design</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card text-center d-flex flex-column align-items-center">
+                <div class="circular-progress reactjs">
+                  <span class="progress-value reactjs-progress">0%</span>
+                </div>
+                <br>
+                <span class="text">Video Editing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+          <div class="heading mt-5 mt-md-3">
+            <small>My Skills</small>
+            <h3> Beautiful & Unique Digital Experiences</h3>
+            <p class="text-muted">
+             I'm a creative and technically skilled professional with expertise in graphic design, video editing, and digital content creation. Proficient in tools like AdobPhotoshope , CorelDRAW, Canva, Illustrator, CapCut, and Microsoft Office, I collaborate effectively with teams to deliver visually engaging and results-driven work. Known for strong time management, critical thinking, and the ability to meet deadlines independently or in group settings.
+            </p>
+            <p class="text-muted">
+              Skilled in graphic design, video editing, and Microsoft Office tools, with strengths in teamwork, time management, creative problem-solving, and effective communication.
+            </p>
+           <a href="OMOSEEBI EMMANUEL CV.pdf" 
+   download="OmoseebiEmmanuelCV" 
+   class="btn btn-primary rounded-pill px-5 py-3 shadow-sm d-inline-flex align-items-center gap-2"
+   style="color: #fff; text-decoration: none;">
+  <i class="bi bi-download"></i> Download CV
+</a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill section end here -->
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading text-center pt-5">
+        <small>Creative Work</small>
+        <h3>Check My Portfolio</h3>
+      </div>
+
+      <div id="myBtnContainer" class="text-center mt-4">
+        <!-- here we will create custom attribute using data- for filtering -->
+        <button class="filter-item" data-filter="all">All</button>
+        <button class="filter-item" data-filter="game">Game</button>
+        <button class="filter-item" data-filter="webapp">Web App</button>
+        <button class="filter-item" data-filter="website">Website</button>
+        <button class="filter-item" data-filter="brand">Brand</button>
+      </div>
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/Adady Peanut Burger Mockup.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Snack Packaging Design</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                ><br />
+               
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/image.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Web Design</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Website</span
+                ><br />
+                
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/2870356_14974.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Branding</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">WebApp</span
+                ><br />
+         
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4 px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/mockup 5.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Logo Design</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">App</span
+                ><br />
+                
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/Akponome Chris business card mockup.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Business Card Design/print</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                ><br />
+                
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/1image.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Web Game/Design</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Web App</span
+                ><br />
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- =========================== Testimonials Section =========================== -->
+<section class="testimonial mt-5 pt-5" id="testimonial">
+  <div class="row justify-content-evenly">
+    <div class="col-md-4 col-10" data-aos="slide-right">
+      <img src="images/llll.png" class="img-fluid" alt="Client Testimonial Image" />
+    </div>
+    <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
+      <div class="heading">
+        <small>Testimonials</small>
+        <h3>Happy Clients Feedback</h3>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-2 text-center">
+                  <i class="bi bi-quote"></i>
+                </div>
+                <div class="col-10">
+                  <p class="text-muted">
+                    Working with Kim Studio was a fantastic experience. The product photography delivered for our eco-friendly line was visually stunning and elevated our brand’s presence instantly.
+                  </p>
+                  <h4>Greenlys</h4>
+                  <small class="fs-6 text-muted">Marketing Lead</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-2 text-center">
+                  <i class="bi bi-quote"></i>
+                </div>
+                <div class="col-10">
+                  <p class="text-muted">
+                    Kim Studio nailed our app UI/UX design with precision and creativity. The Travel Trust app is clean, intuitive, and user-loved!
+                  </p>
+                  <h4>Travel Trust</h4>
+                  <small class="fs-6 text-muted">Product Manager</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-2 text-center">
+                  <i class="bi bi-quote"></i>
+                </div>
+                <div class="col-10">
+                  <p class="text-muted">
+                    We came to Kim Studio for brand identity—and left with a logo that truly represents us. Myto’s branding was spot-on.
+                  </p>
+                  <h4>Myto Apparel</h4>
+                  <small class="fs-6 text-muted">Founder</small>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="nextprev-btn rounded-pill prev-btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <i class="bi bi-arrow-left-circle-fill"></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="nextprev-btn rounded-pill next-btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <i class="bi bi-arrow-right-circle-fill"></i>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== Blog Section =========================== -->
+<section class="blog mt-5 pb-5" id="blog">
+  <div class="heading text-center pt-5">
+    <small>Latest News</small>
+    <h3>Blog & Articles</h3>
+  </div>
+  <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+
+    <div class="blogpost col-md-4 col-10 mt-3">
+      <div class="card">
+        <img src="images/aesthetic-anime-character-gaming.jpg" class="card-img-top rounded-4" alt="2048 Game UI Design" />
+        <div class="card-body px-4">
+          <small>By Kim Studio</small><span class="ms-3">Jun 2025</span>
+          <h4 class="card-title">
+            <a href="https://www.smashingmagazine.com/2022/06/user-interfaces-games-design-tips/" target="_blank">
+              UI Tips from Game Design
+            </a>
+          </h4>
+          <p class="text-muted">
+            Explore how classic game design principles influence UI/UX. Learn strategies to make digital interfaces more engaging.
+          </p>
+          <a href="https://www.smashingmagazine.com/2022/06/user-interfaces-games-design-tips/" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="blogpost col-md-4 col-10 mt-3">
+      <div class="card">
+        <img src="images/2870356_14974.jpg" class="card-img-top rounded-4" alt="Currency Converter App" />
+        <div class="card-body px-4">
+          <small>By Kim Studio</small><span class="ms-3">Jun 2025</span>
+          <h4 class="card-title">
+            <a href="https://99designs.com/blog/tips/branding-guide/" target="_blank">
+              Beginner’s Guide to Branding
+            </a>
+          </h4>
+          <p class="text-muted">
+            A comprehensive introduction to branding fundamentals — from logo creation to color palette psychology.
+          </p>
+          <a href="https://99designs.com/blog/tips/branding-guide/" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="blogpost col-md-4 col-10 mt-3">
+      <div class="card">
+        <img src="images/contact on whatsapp.jpg" class="card-img-top rounded-4" alt="Dictionary App" />
+        <div class="card-body px-4">
+          <small>By Kim Studio</small><span class="ms-3">Jun 2025</span>
+          <h4 class="card-title">
+            <a href="https://www.w3.org/WAI/tips/designing/" target="_blank">
+              Web Accessibility Tips
+            </a>
+          </h4>
+          <p class="text-muted">
+            Simple and effective ways to make your website more inclusive, accessible, and user-friendly for everyone.
+          </p>
+          <a href="https://www.w3.org/WAI/tips/designing/" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill">Read More</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================== Contact Form Section =========================== -->
+<section class="contact py-5" id="contact">
+  <div class="heading text-center">
+    <small>Get in Touch</small>
+    <h3>Any Questions? Feel Free to Contact</h3>
+  </div>
+  <div class="row justify-content-evenly mt-5">
+    <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+      <div class="row">
+        <div class="col-1">
+          <i class="bi bi-geo-alt-fill"></i>
+        </div>
+        <div class="col-11">
+          <p>Lagos, Nigeria</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <i class="bi bi-telephone-fill"></i>
+        </div>
+        <div class="col-11">
+          <p>+234 811 544 8756</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <i class="bi bi-send-fill"></i>
+        </div>
+        <div class="col-11">
+          <p>omoseebiemmanuel969@gmail.com</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <i class="bi bi-instagram"></i>
+        </div>
+        <div class="col-11">
+          <p>@kimstudionigeria</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+      <form onsubmit="return sendToWhatsApp();">
+        <div class="contact-form">
+          <div class="mb-3">
+            <input type="text" class="form-control" id="wh-name" placeholder="Name" required />
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" id="wh-email" placeholder="E-mail" required />
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="wh-phone" placeholder="Mobile No." />
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" id="wh-message" placeholder="Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">Submit</button>
+        </div>
+      </form>
+
+      <script>
+        function sendToWhatsApp() {
+          const name = document.getElementById("wh-name").value.trim();
+          const email = document.getElementById("wh-email").value.trim();
+          const phone = document.getElementById("wh-phone").value.trim();
+          const message = document.getElementById("wh-message").value.trim();
+
+          const fullMessage = `Hello, I’m ${name}%0AEmail: ${email}%0APhone: ${phone}%0AMessage: ${message}`;
+          const whatsappURL = `https://wa.me/2348115448756?text=${fullMessage}`;
+
+          window.open(whatsappURL, "_blank");
+          return false;
+        }
+      </script>
+    </div>
+  </div>
+</section>
+
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">My Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about">About</a>
+        <div class="vr"></div>
+        <a href="#service">Service</a>
+        <div class="vr"></div>
+        <a href="#portfolio">My Portfolio</a>
+        <div class="vr"></div>
+        <a href="#blog">Blog</a>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <button href="" class="rounded-pill dribble">
+          <i class="bi bi-dribbble"></i>
+        </button>
+        <button href="" class="rounded-pill whatsapp">
+          <i class="bi bi-whatsapp"></i>
+        </button>
+        <button href="" class="rounded-pill behance">
+          <i class="bi bi-behance"></i>
+        </button>
+      </div>
+      <hr class="text-muted my-4" />
+
+      <p>Copyright 2025 Omoseebi Emmanuel | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
